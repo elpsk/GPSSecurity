@@ -1,0 +1,6 @@
+framework module GPSSecurity {
+  umbrella header "GPSSecurity-umbrella.h"
+
+  export *
+  module * { export * }
+}

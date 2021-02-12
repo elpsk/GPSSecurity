@@ -1,0 +1,1100 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		096D7EBBF2038D71E4C3295C23A77734 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3466BDF1C63EE297562FE8F1823FD /* TegKeychainConstants.swift */; };
+		24843EDF3517017A86743949E1A0DCFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E619B2C70CF905C8DE1386797D8C8AF2 /* Foundation.framework */; };
+		24A4BC7B398DA13AFFC672049C7891DD /* Pods-GPSSecurity_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC420EEF931B64EA868615B4B7D3C9D3 /* Pods-GPSSecurity_Tests-dummy.m */; };
+		2D0D0C0925D69C52000F9F69 /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0D0C0825D69C52000F9F69 /* LocalStorageManager.swift */; };
+		2D0D0C1525D69D53000F9F69 /* GPSValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0D0C1425D69D53000F9F69 /* GPSValidator.swift */; };
+		2D0D0C3425D6A972000F9F69 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0D0C3225D6A972000F9F69 /* Date.swift */; };
+		2D0D0C3525D6A972000F9F69 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0D0C3325D6A972000F9F69 /* TimeInterval.swift */; };
+		2D0D0C3C25D6A98A000F9F69 /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0D0C3B25D6A98A000F9F69 /* DebugLog.swift */; };
+		2D0D0C4325D6A99C000F9F69 /* LocalStorageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0D0C4225D6A99C000F9F69 /* LocalStorageModel.swift */; };
+		2D7F800225D6AA8700A2A235 /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F800125D6AA8700A2A235 /* TravelModel.swift */; };
+		2D7F800D25D6AB0D00A2A235 /* TravelTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F800C25D6AB0D00A2A235 /* TravelTimeManager.swift */; };
+		2D7F801F25D6AB5A00A2A235 /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F801E25D6AB5A00A2A235 /* CLLocation.swift */; };
+		2D7F802E25D6ABF700A2A235 /* ValidatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F802D25D6ABF700A2A235 /* ValidatorViewModel.swift */; };
+		2D8065D325D6AD730089F56F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8065D225D6AD730089F56F /* Constants.swift */; };
+		2D8065DF25D6BB2D0089F56F /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8065DE25D6BB2D0089F56F /* LocationModel.swift */; };
+		2D8065E525D6C4870089F56F /* GPSValidatorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8065E425D6C4870089F56F /* GPSValidatorSettings.swift */; };
+		331D66E450B80B8565452E3F897964A2 /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A8EBB8429A13FD79B471B95E12020 /* KeychainSwift-dummy.m */; };
+		3F666642FD88682F626DB393AD46C410 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1078C792A2064AF1EE852FF12706A0B /* MapKit.framework */; };
+		4C6506DD942BC43CDD5D6514C9296103 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E619B2C70CF905C8DE1386797D8C8AF2 /* Foundation.framework */; };
+		60A857C034CAFA27F846E84CE057B587 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E619B2C70CF905C8DE1386797D8C8AF2 /* Foundation.framework */; };
+		6B1AE682623DE4A568AD1D2E7FAE6EA8 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8CDCCBA5A8118998F805DDE346BFA6 /* KeychainSwiftAccessOptions.swift */; };
+		7237683A0513F16D4D7B191FA5D42BE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E619B2C70CF905C8DE1386797D8C8AF2 /* Foundation.framework */; };
+		7D04493E935CA2FEF736022A2F078E59 /* GPSSecurity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55092ACB9A7B71CFD34F4DBF6AFD6325 /* GPSSecurity-dummy.m */; };
+		96F8F3B07C290BEFF6D076D158D8E4B2 /* GPSSecurity-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45BC722FE53D821A9DF8259ED71BFC2B /* GPSSecurity-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDF623E42AB33DF0492C2C782A0938F3 /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E81E00840C63728D749B8842187980F /* KeychainSwift.framework */; };
+		E22A2B6BF28B8D349ED75A465AF2547E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01B95EF66EFE0DDE22738D9A74A5DA9 /* UIKit.framework */; };
+		E2AE39645C06D25ABFAA2B3541118263 /* Pods-GPSSecurity_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 806F54ABF2495EF32E1CD1308635D4E8 /* Pods-GPSSecurity_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E362F8675D52BC5B1FC12C9BFDC53A05 /* Pods-GPSSecurity_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 013AD9E5071CAE6203FF9C5A4F186DDD /* Pods-GPSSecurity_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0888BA739129A3E27848F5A2E1B0DF4 /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F6FC730B87B16A7F7A0A92CF2EB13 /* KeychainSwift.swift */; };
+		FABA26BE1E3378E86E9EC32AAE9FAC81 /* Pods-GPSSecurity_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 937D0F41345692DABBF9619535131994 /* Pods-GPSSecurity_Example-dummy.m */; };
+		FD09A6E35E6E72CBF5F012DB59A818AA /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E9CF1441562AF1808C78D1B0BB5941B /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D12ACC6BA5E71B3284B03BD23A60A1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E54A78BCF82272E99319D7F7F5E8C1;
+			remoteInfo = KeychainSwift;
+		};
+		9CFBFD0D8C9678F858D017AC0BE484AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E54A78BCF82272E99319D7F7F5E8C1;
+			remoteInfo = KeychainSwift;
+		};
+		A2422C102BB2B41CF72952C89674911F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4290DE4955A3E3FC983304A4B76005F;
+			remoteInfo = GPSSecurity;
+		};
+		E3EE68FB83E5585199C0F33FC2B79570 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C36D4C18608C8E93CB9B153F4847AB87;
+			remoteInfo = "Pods-GPSSecurity_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		013AD9E5071CAE6203FF9C5A4F186DDD /* Pods-GPSSecurity_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GPSSecurity_Tests-umbrella.h"; sourceTree = "<group>"; };
+		09AFB6417A66A2201318A579C231B2AA /* KeychainSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeychainSwift-Info.plist"; sourceTree = "<group>"; };
+		17456078214F01FDA3C509F1DFB5475F /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
+		1E9CF1441562AF1808C78D1B0BB5941B /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
+		1FFCFAB648BF44C1FCD357BCCC5ECB97 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		291AE6CFAF6E53E0E42130BC5CF2D5BD /* GPSSecurity.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GPSSecurity.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2C0A8EBB8429A13FD79B471B95E12020 /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
+		2D0D0C0825D69C52000F9F69 /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
+		2D0D0C1425D69D53000F9F69 /* GPSValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GPSValidator.swift; path = GPSSecurity/Classes/GPSValidator.swift; sourceTree = "<group>"; };
+		2D0D0C3225D6A972000F9F69 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date.swift; path = GPSSecurity/Classes/Extensions/Date.swift; sourceTree = "<group>"; };
+		2D0D0C3325D6A972000F9F69 /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeInterval.swift; path = GPSSecurity/Classes/Extensions/TimeInterval.swift; sourceTree = "<group>"; };
+		2D0D0C3B25D6A98A000F9F69 /* DebugLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugLog.swift; sourceTree = "<group>"; };
+		2D0D0C4225D6A99C000F9F69 /* LocalStorageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageModel.swift; sourceTree = "<group>"; };
+		2D7F800125D6AA8700A2A235 /* TravelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
+		2D7F800C25D6AB0D00A2A235 /* TravelTimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelTimeManager.swift; sourceTree = "<group>"; };
+		2D7F801E25D6AB5A00A2A235 /* CLLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CLLocation.swift; path = GPSSecurity/Classes/Extensions/CLLocation.swift; sourceTree = "<group>"; };
+		2D7F802D25D6ABF700A2A235 /* ValidatorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorViewModel.swift; sourceTree = "<group>"; };
+		2D8065D225D6AD730089F56F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2D8065DE25D6BB2D0089F56F /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		2D8065E425D6C4870089F56F /* GPSValidatorSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSValidatorSettings.swift; sourceTree = "<group>"; };
+		2E81E00840C63728D749B8842187980F /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3259FB33C448ABBE975B786C0E8E8BF9 /* GPSSecurity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPSSecurity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B44348FF2EC264487F06867262E7F8D /* Pods-GPSSecurity_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GPSSecurity_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3B9303FAC05D42822F7317F92F01F221 /* GPSSecurity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GPSSecurity-prefix.pch"; sourceTree = "<group>"; };
+		3C4F6FC730B87B16A7F7A0A92CF2EB13 /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Sources/KeychainSwift.swift; sourceTree = "<group>"; };
+		3C8CDCCBA5A8118998F805DDE346BFA6 /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
+		45BC722FE53D821A9DF8259ED71BFC2B /* GPSSecurity-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GPSSecurity-umbrella.h"; sourceTree = "<group>"; };
+		49D01E8AB221D17CB31E7803BA1063A1 /* Pods-GPSSecurity_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GPSSecurity_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CE4F705C185A5111B80C450E0735655 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4D6491F55288A44B5935B4906ACCB053 /* GPSSecurity.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GPSSecurity.modulemap; sourceTree = "<group>"; };
+		5383AA9D6C92A0AC2DD89141B495D0B4 /* Pods-GPSSecurity_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GPSSecurity_Example-frameworks.sh"; sourceTree = "<group>"; };
+		55092ACB9A7B71CFD34F4DBF6AFD6325 /* GPSSecurity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GPSSecurity-dummy.m"; sourceTree = "<group>"; };
+		5B2D68F8E4F823E3D39F3A6F7A7DFEC6 /* Pods-GPSSecurity_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GPSSecurity_Tests-Info.plist"; sourceTree = "<group>"; };
+		5F14205D29340B38721BD3562F1908BF /* Pods-GPSSecurity_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GPSSecurity_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7BF572AFC5EEE64DB9DC801900F9E0D2 /* Pods-GPSSecurity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GPSSecurity_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7C81648CB971230CEC39003A5BDB8658 /* GPSSecurity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GPSSecurity.debug.xcconfig; sourceTree = "<group>"; };
+		806F54ABF2495EF32E1CD1308635D4E8 /* Pods-GPSSecurity_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GPSSecurity_Example-umbrella.h"; sourceTree = "<group>"; };
+		82B6AB234CAE25F2C05044C2E8BD1BD7 /* Pods-GPSSecurity_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GPSSecurity_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8E1A87D53A0D877B31BDD2ECEAEE55CA /* Pods_GPSSecurity_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPSSecurity_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90AEF5B04A90188355360007BE1FF726 /* Pods-GPSSecurity_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GPSSecurity_Example-Info.plist"; sourceTree = "<group>"; };
+		92A479A09CC6D729790967D039E04FC0 /* GPSSecurity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GPSSecurity.release.xcconfig; sourceTree = "<group>"; };
+		937D0F41345692DABBF9619535131994 /* Pods-GPSSecurity_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GPSSecurity_Example-dummy.m"; sourceTree = "<group>"; };
+		94F265AB5D1A0AAD3970195B0EE8BDF1 /* Pods-GPSSecurity_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GPSSecurity_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9B64B517182FB44AD4E5DF48BDDFCD2B /* Pods-GPSSecurity_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GPSSecurity_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D1EEA2D38F9785A91D59C0CE73AFE4 /* Pods-GPSSecurity_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GPSSecurity_Tests.modulemap"; sourceTree = "<group>"; };
+		AFEDA7C306ACBFC296C199C3CC8D65AE /* GPSSecurity-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GPSSecurity-Info.plist"; sourceTree = "<group>"; };
+		B01B95EF66EFE0DDE22738D9A74A5DA9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B1078C792A2064AF1EE852FF12706A0B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		B6DBDC187520AEA2149B702813C781D4 /* KeychainSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.release.xcconfig; sourceTree = "<group>"; };
+		CAA3466BDF1C63EE297562FE8F1823FD /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
+		D3FC93B8FF581D37B8347BB2004879E9 /* KeychainSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.debug.xcconfig; sourceTree = "<group>"; };
+		D9FE44B0E6F59D7F3F70D94F1C430C1C /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
+		DD3F8F7D99FA422579D5B5AF0BFEC3DB /* Pods-GPSSecurity_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GPSSecurity_Example.modulemap"; sourceTree = "<group>"; };
+		DE6B2563F8095BFD05D1F00D0EC2CAE7 /* Pods-GPSSecurity_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GPSSecurity_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E619B2C70CF905C8DE1386797D8C8AF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F9EF43D9131A34076E45868C03CF023C /* Pods_GPSSecurity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPSSecurity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC420EEF931B64EA868615B4B7D3C9D3 /* Pods-GPSSecurity_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GPSSecurity_Tests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46DB10ADC8CB7C444DFA8565F874DBD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A857C034CAFA27F846E84CE057B587 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F23C5CB0A492B1EE3A387910DAA1736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7237683A0513F16D4D7B191FA5D42BE6 /* Foundation.framework in Frameworks */,
+				BDF623E42AB33DF0492C2C782A0938F3 /* KeychainSwift.framework in Frameworks */,
+				3F666642FD88682F626DB393AD46C410 /* MapKit.framework in Frameworks */,
+				E22A2B6BF28B8D349ED75A465AF2547E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89FCF068A5864544478307EC2E889358 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6506DD942BC43CDD5D6514C9296103 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6591FBB27BEBEC42DB3E1C300E37076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24843EDF3517017A86743949E1A0DCFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D0D0C2725D6A93A000F9F69 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D0D0C3225D6A972000F9F69 /* Date.swift */,
+				2D0D0C3325D6A972000F9F69 /* TimeInterval.swift */,
+				2D7F801E25D6AB5A00A2A235 /* CLLocation.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		2D0D0C3A25D6A98A000F9F69 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2D0D0C3B25D6A98A000F9F69 /* DebugLog.swift */,
+			);
+			name = Utils;
+			path = GPSSecurity/Classes/Utils;
+			sourceTree = "<group>";
+		};
+		2D0D0C4125D6A99C000F9F69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D0D0C4225D6A99C000F9F69 /* LocalStorageModel.swift */,
+				2D7F800125D6AA8700A2A235 /* TravelModel.swift */,
+				2D8065DE25D6BB2D0089F56F /* LocationModel.swift */,
+				2D8065E425D6C4870089F56F /* GPSValidatorSettings.swift */,
+			);
+			name = Model;
+			path = GPSSecurity/Classes/Model;
+			sourceTree = "<group>";
+		};
+		2D7F800B25D6AB0D00A2A235 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2D0D0C0825D69C52000F9F69 /* LocalStorageManager.swift */,
+				2D7F800C25D6AB0D00A2A235 /* TravelTimeManager.swift */,
+			);
+			name = Manager;
+			path = GPSSecurity/Classes/Manager;
+			sourceTree = "<group>";
+		};
+		2D7F802C25D6ABF700A2A235 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2D7F802D25D6ABF700A2A235 /* ValidatorViewModel.swift */,
+			);
+			name = ViewModel;
+			path = GPSSecurity/Classes/ViewModel;
+			sourceTree = "<group>";
+		};
+		2D8065D125D6AD6A0089F56F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2D8065D225D6AD730089F56F /* Constants.swift */,
+			);
+			name = Constants;
+			path = GPSSecurity/Classes/Constants;
+			sourceTree = "<group>";
+		};
+		391AEE8CECE888EA6912CD9B96C7D9AC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E619B2C70CF905C8DE1386797D8C8AF2 /* Foundation.framework */,
+				B1078C792A2064AF1EE852FF12706A0B /* MapKit.framework */,
+				B01B95EF66EFE0DDE22738D9A74A5DA9 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		579FC346D0747355F7667A0F18E36440 /* Pods-GPSSecurity_Example */ = {
+			isa = PBXGroup;
+			children = (
+				DD3F8F7D99FA422579D5B5AF0BFEC3DB /* Pods-GPSSecurity_Example.modulemap */,
+				DE6B2563F8095BFD05D1F00D0EC2CAE7 /* Pods-GPSSecurity_Example-acknowledgements.markdown */,
+				94F265AB5D1A0AAD3970195B0EE8BDF1 /* Pods-GPSSecurity_Example-acknowledgements.plist */,
+				937D0F41345692DABBF9619535131994 /* Pods-GPSSecurity_Example-dummy.m */,
+				5383AA9D6C92A0AC2DD89141B495D0B4 /* Pods-GPSSecurity_Example-frameworks.sh */,
+				90AEF5B04A90188355360007BE1FF726 /* Pods-GPSSecurity_Example-Info.plist */,
+				806F54ABF2495EF32E1CD1308635D4E8 /* Pods-GPSSecurity_Example-umbrella.h */,
+				82B6AB234CAE25F2C05044C2E8BD1BD7 /* Pods-GPSSecurity_Example.debug.xcconfig */,
+				5F14205D29340B38721BD3562F1908BF /* Pods-GPSSecurity_Example.release.xcconfig */,
+			);
+			name = "Pods-GPSSecurity_Example";
+			path = "Target Support Files/Pods-GPSSecurity_Example";
+			sourceTree = "<group>";
+		};
+		6914C866BAE31BFBA9841BEDCD93C6A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB96A68701C841DFFA76F65DBE7E5D29 /* KeychainSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8385D971F0D2BD689045495D155AED1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E81E00840C63728D749B8842187980F /* KeychainSwift.framework */,
+				391AEE8CECE888EA6912CD9B96C7D9AC /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B00DA973CA9C8B3444685714158C4C85 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9FE44B0E6F59D7F3F70D94F1C430C1C /* KeychainSwift.modulemap */,
+				2C0A8EBB8429A13FD79B471B95E12020 /* KeychainSwift-dummy.m */,
+				09AFB6417A66A2201318A579C231B2AA /* KeychainSwift-Info.plist */,
+				17456078214F01FDA3C509F1DFB5475F /* KeychainSwift-prefix.pch */,
+				1E9CF1441562AF1808C78D1B0BB5941B /* KeychainSwift-umbrella.h */,
+				D3FC93B8FF581D37B8347BB2004879E9 /* KeychainSwift.debug.xcconfig */,
+				B6DBDC187520AEA2149B702813C781D4 /* KeychainSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeychainSwift";
+			sourceTree = "<group>";
+		};
+		B1EB2AC0A6A5B3599CD8A65EFDF4DE14 /* GPSSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				2D0D0C1425D69D53000F9F69 /* GPSValidator.swift */,
+				2D7F800B25D6AB0D00A2A235 /* Manager */,
+				2D7F802C25D6ABF700A2A235 /* ViewModel */,
+				2D0D0C4125D6A99C000F9F69 /* Model */,
+				2D0D0C3A25D6A98A000F9F69 /* Utils */,
+				2D8065D125D6AD6A0089F56F /* Constants */,
+				2D0D0C2725D6A93A000F9F69 /* Extensions */,
+				E2C0C3202FDE8FEE7D2C8542D66FCC9D /* Pod */,
+				C1A1B7F814217F4F26DA3C7D872C3B52 /* Support Files */,
+			);
+			name = GPSSecurity;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B377AB65D17223612135F8C46D0A792F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				579FC346D0747355F7667A0F18E36440 /* Pods-GPSSecurity_Example */,
+				C8F0EAAF60AE074C468AFD00B60F1322 /* Pods-GPSSecurity_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BB96A68701C841DFFA76F65DBE7E5D29 /* KeychainSwift */ = {
+			isa = PBXGroup;
+			children = (
+				3C4F6FC730B87B16A7F7A0A92CF2EB13 /* KeychainSwift.swift */,
+				3C8CDCCBA5A8118998F805DDE346BFA6 /* KeychainSwiftAccessOptions.swift */,
+				CAA3466BDF1C63EE297562FE8F1823FD /* TegKeychainConstants.swift */,
+				B00DA973CA9C8B3444685714158C4C85 /* Support Files */,
+			);
+			path = KeychainSwift;
+			sourceTree = "<group>";
+		};
+		C1A1B7F814217F4F26DA3C7D872C3B52 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D6491F55288A44B5935B4906ACCB053 /* GPSSecurity.modulemap */,
+				55092ACB9A7B71CFD34F4DBF6AFD6325 /* GPSSecurity-dummy.m */,
+				AFEDA7C306ACBFC296C199C3CC8D65AE /* GPSSecurity-Info.plist */,
+				3B9303FAC05D42822F7317F92F01F221 /* GPSSecurity-prefix.pch */,
+				45BC722FE53D821A9DF8259ED71BFC2B /* GPSSecurity-umbrella.h */,
+				7C81648CB971230CEC39003A5BDB8658 /* GPSSecurity.debug.xcconfig */,
+				92A479A09CC6D729790967D039E04FC0 /* GPSSecurity.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GPSSecurity";
+			sourceTree = "<group>";
+		};
+		C1CE9D3456A44FF4BCB34AC3A14ECB6C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1EB2AC0A6A5B3599CD8A65EFDF4DE14 /* GPSSecurity */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C8F0EAAF60AE074C468AFD00B60F1322 /* Pods-GPSSecurity_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1EEA2D38F9785A91D59C0CE73AFE4 /* Pods-GPSSecurity_Tests.modulemap */,
+				3B44348FF2EC264487F06867262E7F8D /* Pods-GPSSecurity_Tests-acknowledgements.markdown */,
+				9B64B517182FB44AD4E5DF48BDDFCD2B /* Pods-GPSSecurity_Tests-acknowledgements.plist */,
+				FC420EEF931B64EA868615B4B7D3C9D3 /* Pods-GPSSecurity_Tests-dummy.m */,
+				5B2D68F8E4F823E3D39F3A6F7A7DFEC6 /* Pods-GPSSecurity_Tests-Info.plist */,
+				013AD9E5071CAE6203FF9C5A4F186DDD /* Pods-GPSSecurity_Tests-umbrella.h */,
+				49D01E8AB221D17CB31E7803BA1063A1 /* Pods-GPSSecurity_Tests.debug.xcconfig */,
+				7BF572AFC5EEE64DB9DC801900F9E0D2 /* Pods-GPSSecurity_Tests.release.xcconfig */,
+			);
+			name = "Pods-GPSSecurity_Tests";
+			path = "Target Support Files/Pods-GPSSecurity_Tests";
+			sourceTree = "<group>";
+		};
+		CEE60C7962D350069B0AD7832956B7D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3259FB33C448ABBE975B786C0E8E8BF9 /* GPSSecurity.framework */,
+				9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */,
+				8E1A87D53A0D877B31BDD2ECEAEE55CA /* Pods_GPSSecurity_Example.framework */,
+				F9EF43D9131A34076E45868C03CF023C /* Pods_GPSSecurity_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C1CE9D3456A44FF4BCB34AC3A14ECB6C /* Development Pods */,
+				8385D971F0D2BD689045495D155AED1B /* Frameworks */,
+				6914C866BAE31BFBA9841BEDCD93C6A6 /* Pods */,
+				CEE60C7962D350069B0AD7832956B7D9 /* Products */,
+				B377AB65D17223612135F8C46D0A792F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2C0C3202FDE8FEE7D2C8542D66FCC9D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				291AE6CFAF6E53E0E42130BC5CF2D5BD /* GPSSecurity.podspec */,
+				4CE4F705C185A5111B80C450E0735655 /* LICENSE */,
+				1FFCFAB648BF44C1FCD357BCCC5ECB97 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		385288A2575C5CBEAC05F8B8C6A8EB33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F8F3B07C290BEFF6D076D158D8E4B2 /* GPSSecurity-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE07CF2C69B2FC734884C6C60744E29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E362F8675D52BC5B1FC12C9BFDC53A05 /* Pods-GPSSecurity_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA57EF149B96B18857C7215CE89B0ADD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD09A6E35E6E72CBF5F012DB59A818AA /* KeychainSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB6CF9DF0FA96DF9B96327224D4F26A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2AE39645C06D25ABFAA2B3541118263 /* Pods-GPSSecurity_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93FA691E469C2410EA6101964E03DB12 /* Build configuration list for PBXNativeTarget "KeychainSwift" */;
+			buildPhases = (
+				CA57EF149B96B18857C7215CE89B0ADD /* Headers */,
+				988496F60EA9B9BD1ECCCDBDA05605E3 /* Sources */,
+				46DB10ADC8CB7C444DFA8565F874DBD0 /* Frameworks */,
+				70E5AF0D0719E692C87A6225617400BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainSwift;
+			productName = KeychainSwift;
+			productReference = 9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65CB9B26563BBE280F800C4E4C082419 /* Pods-GPSSecurity_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A6CF32946D6CDD6AAE1D773BE048B34 /* Build configuration list for PBXNativeTarget "Pods-GPSSecurity_Tests" */;
+			buildPhases = (
+				6FE07CF2C69B2FC734884C6C60744E29 /* Headers */,
+				A3D9C70A277970D6E8BD548E3B1DD8DD /* Sources */,
+				F6591FBB27BEBEC42DB3E1C300E37076 /* Frameworks */,
+				18CA99229BDC2D7C4481DE99961B20BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DF35E58A63DC085E304F8D59C6F1E53 /* PBXTargetDependency */,
+			);
+			name = "Pods-GPSSecurity_Tests";
+			productName = "Pods-GPSSecurity_Tests";
+			productReference = F9EF43D9131A34076E45868C03CF023C /* Pods_GPSSecurity_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A4290DE4955A3E3FC983304A4B76005F /* GPSSecurity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D0E923162D8DB6438F3B42CA2A1EAD1 /* Build configuration list for PBXNativeTarget "GPSSecurity" */;
+			buildPhases = (
+				385288A2575C5CBEAC05F8B8C6A8EB33 /* Headers */,
+				F03132DC392D5CBD4370D5D0E2EF32B3 /* Sources */,
+				6F23C5CB0A492B1EE3A387910DAA1736 /* Frameworks */,
+				CA96CDD9A9A0FA8D4E7E7738083713CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76CAA4E51AFC25FAC5681588C18A69A8 /* PBXTargetDependency */,
+			);
+			name = GPSSecurity;
+			productName = GPSSecurity;
+			productReference = 3259FB33C448ABBE975B786C0E8E8BF9 /* GPSSecurity.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C36D4C18608C8E93CB9B153F4847AB87 /* Pods-GPSSecurity_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6304C41D22263A45320A8E88488D3DA0 /* Build configuration list for PBXNativeTarget "Pods-GPSSecurity_Example" */;
+			buildPhases = (
+				CB6CF9DF0FA96DF9B96327224D4F26A4 /* Headers */,
+				42E6FAAB726149FED9EE59C6B241A366 /* Sources */,
+				89FCF068A5864544478307EC2E889358 /* Frameworks */,
+				2CF99A71C20B32F57D499672061AB55E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42EF8D414CDAB973C80C4EE506746001 /* PBXTargetDependency */,
+				47403FA5EBE497DAD9EC6D2EC2CAD7C1 /* PBXTargetDependency */,
+			);
+			name = "Pods-GPSSecurity_Example";
+			productName = "Pods-GPSSecurity_Example";
+			productReference = 8E1A87D53A0D877B31BDD2ECEAEE55CA /* Pods_GPSSecurity_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CEE60C7962D350069B0AD7832956B7D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4290DE4955A3E3FC983304A4B76005F /* GPSSecurity */,
+				07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */,
+				C36D4C18608C8E93CB9B153F4847AB87 /* Pods-GPSSecurity_Example */,
+				65CB9B26563BBE280F800C4E4C082419 /* Pods-GPSSecurity_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18CA99229BDC2D7C4481DE99961B20BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF99A71C20B32F57D499672061AB55E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70E5AF0D0719E692C87A6225617400BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA96CDD9A9A0FA8D4E7E7738083713CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42E6FAAB726149FED9EE59C6B241A366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABA26BE1E3378E86E9EC32AAE9FAC81 /* Pods-GPSSecurity_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		988496F60EA9B9BD1ECCCDBDA05605E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331D66E450B80B8565452E3F897964A2 /* KeychainSwift-dummy.m in Sources */,
+				F0888BA739129A3E27848F5A2E1B0DF4 /* KeychainSwift.swift in Sources */,
+				6B1AE682623DE4A568AD1D2E7FAE6EA8 /* KeychainSwiftAccessOptions.swift in Sources */,
+				096D7EBBF2038D71E4C3295C23A77734 /* TegKeychainConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3D9C70A277970D6E8BD548E3B1DD8DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A4BC7B398DA13AFFC672049C7891DD /* Pods-GPSSecurity_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03132DC392D5CBD4370D5D0E2EF32B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D0D0C3525D6A972000F9F69 /* TimeInterval.swift in Sources */,
+				2D7F802E25D6ABF700A2A235 /* ValidatorViewModel.swift in Sources */,
+				7D04493E935CA2FEF736022A2F078E59 /* GPSSecurity-dummy.m in Sources */,
+				2D7F801F25D6AB5A00A2A235 /* CLLocation.swift in Sources */,
+				2D0D0C0925D69C52000F9F69 /* LocalStorageManager.swift in Sources */,
+				2D0D0C1525D69D53000F9F69 /* GPSValidator.swift in Sources */,
+				2D7F800D25D6AB0D00A2A235 /* TravelTimeManager.swift in Sources */,
+				2D0D0C3C25D6A98A000F9F69 /* DebugLog.swift in Sources */,
+				2D0D0C4325D6A99C000F9F69 /* LocalStorageModel.swift in Sources */,
+				2D0D0C3425D6A972000F9F69 /* Date.swift in Sources */,
+				2D8065DF25D6BB2D0089F56F /* LocationModel.swift in Sources */,
+				2D7F800225D6AA8700A2A235 /* TravelModel.swift in Sources */,
+				2D8065E525D6C4870089F56F /* GPSValidatorSettings.swift in Sources */,
+				2D8065D325D6AD730089F56F /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42EF8D414CDAB973C80C4EE506746001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPSSecurity;
+			target = A4290DE4955A3E3FC983304A4B76005F /* GPSSecurity */;
+			targetProxy = A2422C102BB2B41CF72952C89674911F /* PBXContainerItemProxy */;
+		};
+		47403FA5EBE497DAD9EC6D2EC2CAD7C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainSwift;
+			target = 07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */;
+			targetProxy = 9CFBFD0D8C9678F858D017AC0BE484AC /* PBXContainerItemProxy */;
+		};
+		76CAA4E51AFC25FAC5681588C18A69A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainSwift;
+			target = 07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */;
+			targetProxy = 0D12ACC6BA5E71B3284B03BD23A60A1A /* PBXContainerItemProxy */;
+		};
+		8DF35E58A63DC085E304F8D59C6F1E53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GPSSecurity_Example";
+			target = C36D4C18608C8E93CB9B153F4847AB87 /* Pods-GPSSecurity_Example */;
+			targetProxy = E3EE68FB83E5585199C0F33FC2B79570 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14F2C0FB6FB9832126098F03695AAFA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F14205D29340B38721BD3562F1908BF /* Pods-GPSSecurity_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GPSSecurity_Example/Pods-GPSSecurity_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GPSSecurity_Example/Pods-GPSSecurity_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		766C08721685856474973A045E40AAEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92A479A09CC6D729790967D039E04FC0 /* GPSSecurity.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GPSSecurity/GPSSecurity-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GPSSecurity/GPSSecurity-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GPSSecurity/GPSSecurity.modulemap";
+				PRODUCT_MODULE_NAME = GPSSecurity;
+				PRODUCT_NAME = GPSSecurity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8454EDDB94589D654083B3FE5E05EB66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C81648CB971230CEC39003A5BDB8658 /* GPSSecurity.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GPSSecurity/GPSSecurity-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GPSSecurity/GPSSecurity-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GPSSecurity/GPSSecurity.modulemap";
+				PRODUCT_MODULE_NAME = GPSSecurity;
+				PRODUCT_NAME = GPSSecurity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		85D880D88B8EC08F5910CE4A29115B52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B6AB234CAE25F2C05044C2E8BD1BD7 /* Pods-GPSSecurity_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GPSSecurity_Example/Pods-GPSSecurity_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GPSSecurity_Example/Pods-GPSSecurity_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		97D6BDB37A4ACC484FD62E552BD5789A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D01E8AB221D17CB31E7803BA1063A1 /* Pods-GPSSecurity_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GPSSecurity_Tests/Pods-GPSSecurity_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GPSSecurity_Tests/Pods-GPSSecurity_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C6E4F3F76472E14CDBBC04F76C47119F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BF572AFC5EEE64DB9DC801900F9E0D2 /* Pods-GPSSecurity_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GPSSecurity_Tests/Pods-GPSSecurity_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GPSSecurity_Tests/Pods-GPSSecurity_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CDB56DA719D136F0135457250204CE4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6DBDC187520AEA2149B702813C781D4 /* KeychainSwift.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainSwift/KeychainSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainSwift/KeychainSwift.modulemap";
+				PRODUCT_MODULE_NAME = KeychainSwift;
+				PRODUCT_NAME = KeychainSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D877A1BF91DD5724EEFCE8C61E2897C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3FC93B8FF581D37B8347BB2004879E9 /* KeychainSwift.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainSwift/KeychainSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainSwift/KeychainSwift.modulemap";
+				PRODUCT_MODULE_NAME = KeychainSwift;
+				PRODUCT_NAME = KeychainSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A6CF32946D6CDD6AAE1D773BE048B34 /* Build configuration list for PBXNativeTarget "Pods-GPSSecurity_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97D6BDB37A4ACC484FD62E552BD5789A /* Debug */,
+				C6E4F3F76472E14CDBBC04F76C47119F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6304C41D22263A45320A8E88488D3DA0 /* Build configuration list for PBXNativeTarget "Pods-GPSSecurity_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D880D88B8EC08F5910CE4A29115B52 /* Debug */,
+				14F2C0FB6FB9832126098F03695AAFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D0E923162D8DB6438F3B42CA2A1EAD1 /* Build configuration list for PBXNativeTarget "GPSSecurity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8454EDDB94589D654083B3FE5E05EB66 /* Debug */,
+				766C08721685856474973A045E40AAEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93FA691E469C2410EA6101964E03DB12 /* Build configuration list for PBXNativeTarget "KeychainSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D877A1BF91DD5724EEFCE8C61E2897C7 /* Debug */,
+				CDB56DA719D136F0135457250204CE4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

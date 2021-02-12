@@ -1,0 +1,6 @@
+framework module Pods_GPSSecurity_Example {
+  umbrella header "Pods-GPSSecurity_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

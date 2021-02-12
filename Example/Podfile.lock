@@ -1,0 +1,24 @@
+PODS:
+  - GPSSecurity (0.1.0):
+    - KeychainSwift (~> 19.0)
+  - KeychainSwift (19.0.0)
+
+DEPENDENCIES:
+  - GPSSecurity (from `../`)
+  - KeychainSwift (~> 19.0)
+
+SPEC REPOS:
+  trunk:
+    - KeychainSwift
+
+EXTERNAL SOURCES:
+  GPSSecurity:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GPSSecurity: ba2a5474a5f29b1e3aaf7ef657f4157eabb674e5
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+
+PODFILE CHECKSUM: 4c51c435a1757de1f9725d49150ef812525a93f1
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,31 @@
+{
+  "name": "GPSSecurity",
+  "version": "0.1.0",
+  "summary": "A short description of GPSSecurity.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/alberto.pasca@gmail.com/GPSSecurity",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "alberto.pasca@gmail.com": "alberto.pasca@pirelli.com"
+  },
+  "source": {
+    "git": "https://github.com/alberto.pasca@gmail.com/GPSSecurity.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "GPSSecurity/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ],
+  "dependencies": {
+    "KeychainSwift": [
+      "~> 19.0"
+    ]
+  }
+}
