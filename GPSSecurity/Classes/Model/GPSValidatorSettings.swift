@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MapKit
 
 public struct GPSValidatorSettings {
 

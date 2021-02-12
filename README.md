@@ -4,7 +4,7 @@
 
 The scope of the SDK is to limitate the use of fake GPS positions or mocked position through XCode.  
 
-You can read more in this article: [https://www.albertopasca.it/whiletrue](https://www.albertopasca.it/whiletrue)
+You can read more in this article: [https://www.albertopasca.it/whiletrue/ios-fake-gps-position-how-to-use-and-prevent/](https://www.albertopasca.it/whiletrue/ios-fake-gps-position-how-to-use-and-prevent/)
 
 
 ## How it works
